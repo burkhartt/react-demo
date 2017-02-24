@@ -14,4 +14,8 @@ export default defineMessages({
     id: 'boilerplate.components.Header.features',
     defaultMessage: 'Features',
   },
+  search: {
+    id: 'boilerplate.components.Header.search',
+    defaultMessage: 'Search'
+  }
 });

@@ -9,6 +9,7 @@ import { LOCATION_CHANGE } from 'react-router-redux';
 
 import globalReducer from 'containers/App/reducer';
 import languageProviderReducer from 'containers/LanguageProvider/reducer';
+import searchReducer from 'containers/SearchPage/reducer';
 
 /*
  * routeReducer
@@ -45,6 +46,7 @@ export default function createReducer(asyncReducers) {
   return combineReducers({
     route: routeReducer,
     global: globalReducer,
+    search: searchReducer,
     language: languageProviderReducer,
     ...asyncReducers,
   });
